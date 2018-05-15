@@ -1,0 +1,71 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BACKLOG	server.c	/^#define BACKLOG /;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS =  -g -Wall -Wno-unused-variable -Wno-unused-but-set-variable$/;"	m
+E_ACCEPTFAIL	common.h	/^    E_ACCEPTFAIL = -45,$/;"	e	enum:errnum
+E_ALLOC	common.h	/^    E_ALLOC = -2,$/;"	e	enum:errnum
+E_BINDFAIL	common.h	/^    E_BINDFAIL = -42,$/;"	e	enum:errnum
+E_CONNCLS	common.h	/^    E_CONNCLS = -32,$/;"	e	enum:errnum
+E_CONNFAIL	common.h	/^    E_CONNFAIL = -51,$/;"	e	enum:errnum
+E_ECHO_FAIL	common.h	/^    E_ECHO_FAIL = -47,$/;"	e	enum:errnum
+E_ECHO_INIT	common.h	/^    E_ECHO_INIT = -31,  \/\/ echo_message 함수 에러$/;"	e	enum:errnum
+E_GETMSGFAIL	common.h	/^    E_GETMSGFAIL = -52,$/;"	e	enum:errnum
+E_INITMSG	common.h	/^    E_INITMSG = -48,$/;"	e	enum:errnum
+E_INVALADDR	common.h	/^    E_INVALADDR = -50,  \/\/ client의 main 함수 에러.$/;"	e	enum:errnum
+E_LENGTH_ZERO	common.h	/^    E_LENGTH_ZERO = -26,$/;"	e	enum:errnum
+E_LISTENFAIL	common.h	/^    E_LISTENFAIL = -43,$/;"	e	enum:errnum
+E_LOGFAIL	common.h	/^    E_LOGFAIL = -46,$/;"	e	enum:errnum
+E_PARAM	common.h	/^    E_PARAM = -1,       \/\/ 공통적인 에러.$/;"	e	enum:errnum
+E_PEER_LOST	common.h	/^    E_PEER_LOST = -25,$/;"	e	enum:errnum
+E_RECV	common.h	/^    E_RECV  = -23,      \/\/ recv_message 함수 에러$/;"	e	enum:errnum
+E_RECVMSG	common.h	/^    E_RECVMSG = -24,$/;"	e	enum:errnum
+E_SELECTFAIL	common.h	/^    E_SELECTFAIL = -44,$/;"	e	enum:errnum
+E_SEND	common.h	/^    E_SEND  = -13,      \/\/ send_message 함수 에러$/;"	e	enum:errnum
+E_SENDMSG	common.h	/^    E_SENDMSG = -14,$/;"	e	enum:errnum
+E_SOCKFAIL	common.h	/^    E_SOCKFAIL = -41,   \/\/ run_server 함수 에러$/;"	e	enum:errnum
+HEADERS	Makefile	/^HEADERS = $(wildcard *.h)$/;"	m
+INPUT_MSG_SIZE	client.c	/^#define INPUT_MSG_SIZE /;"	d	file:
+LIBS	Makefile	/^LIBS = -lm$/;"	m
+MAXSIZE	client.c	/^#define MAXSIZE /;"	d	file:
+MAX_NUM_ERR	common.h	/^#define MAX_NUM_ERR /;"	d
+MSG_MAXSIZE	client.c	/^#define MSG_MAXSIZE /;"	d	file:
+MYPORT	server.c	/^#define MYPORT /;"	d	file:
+OBJECTS	Makefile	/^OBJECTS = main.o server.o common.o$/;"	m
+OBJECTS2	Makefile	/^OBJECTS2 = client.o	 common.o$/;"	m
+OK	common.h	/^#define OK /;"	d
+RECV_BUF_SIZE	common.c	/^#define RECV_BUF_SIZE /;"	d	file:
+RECV_ERROR	common.c	/^#define RECV_ERROR /;"	d	file:
+TARGET	Makefile	/^TARGET = echo_server$/;"	m
+TARGET2	Makefile	/^TARGET2 = client$/;"	m
+UINT32_SIZE	common.c	/^#define UINT32_SIZE /;"	d	file:
+__CLIENT_H__	client.h	/^#define __CLIENT_H__$/;"	d
+__COMMON_H__	common.h	/^#define __COMMON_H__$/;"	d
+__SERVER_H__	server.h	/^#define __SERVER_H__$/;"	d
+chat_message	common.h	/^typedef struct chat_message {$/;"	s
+chat_message_t	common.h	/^} chat_message_t;$/;"	t	typeref:struct:chat_message
+cleanup_chat_message	common.c	/^int cleanup_chat_message(chat_message_t* m)$/;"	f
+config_server_addr	server.c	/^void config_server_addr(struct sockaddr_in* my_addr)$/;"	f
+echo_message	server.c	/^int echo_message(FILE* log_fd, int fd, struct sockaddr_in client_addr)$/;"	f
+err_msg_t	common.h	/^} err_msg_t;$/;"	t	typeref:struct:error_msg
+errnum	common.h	/^    int errnum;$/;"	m	struct:error_msg
+errnum	common.h	/^enum errnum {$/;"	g
+error_msg	common.h	/^typedef struct error_msg {$/;"	s
+find_err_msg	common.c	/^char* find_err_msg(int errcode)$/;"	f
+free_chat_message	common.c	/^int free_chat_message(chat_message_t* m)$/;"	f
+get_err_msg	common.c	/^err_msg_t get_err_msg[] = {$/;"	v
+get_message	client.c	/^chat_message_t* get_message(void)$/;"	f
+init_chat_message	common.c	/^chat_message_t* init_chat_message(void)$/;"	f
+main	client.c	/^int main(int argc, char *argv[])$/;"	f
+main	main.c	/^int main(int argc, char** argv) $/;"	f
+msg	common.h	/^    char* msg;$/;"	m	struct:chat_message
+msg	common.h	/^    char* msg;$/;"	m	struct:error_msg
+msg_len	common.h	/^    uint32_t msg_len;$/;"	m	struct:chat_message
+recv_message	common.c	/^int recv_message(int fd, chat_message_t* m)$/;"	f
+run_server	server.c	/^int run_server(void)$/;"	f
+send_message	common.c	/^int send_message(int fd, chat_message_t* m)$/;"	f
+set_fd_nonblock_flag	common.c	/^void set_fd_nonblock_flag(int fd)$/;"	f
